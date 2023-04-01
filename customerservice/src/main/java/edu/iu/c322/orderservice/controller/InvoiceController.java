@@ -2,24 +2,18 @@ package edu.iu.c322.orderservice.controller;
 
 import edu.iu.c322.orderservice.Repository.CustomerRepository;
 import edu.iu.c322.orderservice.Repository.InMemoryCustomerRepository;
-import edu.iu.c322.orderservice.model.Customer;
 import edu.iu.c322.orderservice.model.Invoice;
-import edu.iu.c322.orderservice.model.Item;
-import edu.iu.c322.orderservice.model.Order;
-import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/customer")
-public class CustomerController {
+public class InvoiceController {
 
     //get localhost:8080/customers
     private CustomerRepository repository;
 
-    public CustomerController(CustomerRepository repository) {
+    public void CustomerController(CustomerRepository repository) {
         this.repository = repository;
     }
 
