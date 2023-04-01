@@ -18,7 +18,6 @@ public class InvoiceController {
     }
 
     //INVOICE COMMANDS
-    @ResponseStatus(HttpStatus.CREATED)
     @GetMapping("/invoices/{orderId}")
     public Invoice findInvoice(@PathVariable int id, int orderid) {
         InMemoryCustomerRepository myrepo = (InMemoryCustomerRepository) repository;
